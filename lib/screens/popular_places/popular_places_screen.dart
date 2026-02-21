@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:test_assignment/screens/popular_places/widgets/fliter_sheet.dart';
 import 'package:test_assignment/screens/popular_places/widgets/place_card.dart';
-import '../../providers/app_provider.dart';
+import '../schedule_screen/providers/schedule_provider.dart';
+import '../../providers/destinatioN_provider.dart';
 import '../../utils/app_constants.dart';
 import '../../models/destination_model.dart';
 import '../details/details_screen.dart';
@@ -21,7 +22,6 @@ class PopularPlacesScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Top bar
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
               child: Row(

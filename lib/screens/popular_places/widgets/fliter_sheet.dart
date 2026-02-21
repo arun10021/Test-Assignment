@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:test_assignment/providers/app_provider.dart';
+import 'package:test_assignment/screens/schedule_screen/providers/schedule_provider.dart';
 import 'package:test_assignment/utils/app_constants.dart';
+
+import '../../../providers/destinatioN_provider.dart';
 
 class FilterSheet extends StatefulWidget {
   final DestinationProvider provider;
@@ -44,7 +46,6 @@ class _FilterSheetState extends State<FilterSheet> {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Handle
           Center(
             child: Container(
               width: 40,
@@ -57,7 +58,6 @@ class _FilterSheetState extends State<FilterSheet> {
           ),
           const SizedBox(height: 20),
 
-          // Title
           Row(
             children: [
               const Text(
@@ -126,7 +126,6 @@ class _FilterSheetState extends State<FilterSheet> {
 
           const SizedBox(height: 20),
 
-          // Price range
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -156,7 +155,6 @@ class _FilterSheetState extends State<FilterSheet> {
 
           const SizedBox(height: 8),
 
-          // Rating
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -188,7 +186,6 @@ class _FilterSheetState extends State<FilterSheet> {
 
           const SizedBox(height: 16),
 
-          // Apply button
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(

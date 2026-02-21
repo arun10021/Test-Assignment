@@ -6,7 +6,7 @@ import 'package:test_assignment/screens/schedule_screen/widgets/empty_state.dart
 import 'package:test_assignment/screens/schedule_screen/widgets/notification_button.dart';
 import 'package:test_assignment/screens/schedule_screen/widgets/schedule_card.dart';
 import 'package:test_assignment/screens/schedule_screen/widgets/week_row.dart';
-import '../../providers/app_provider.dart';
+import 'providers/schedule_provider.dart';
 import '../../utils/app_constants.dart';
 import '../home/provider/navigation_provider.dart';
 

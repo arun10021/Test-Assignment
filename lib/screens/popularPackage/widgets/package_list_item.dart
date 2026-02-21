@@ -4,7 +4,7 @@ import 'package:test_assignment/utils/app_constants.dart';
 
 class PackageListItem extends StatelessWidget {
   final TripPackageModel package;
-  const PackageListItem({required this.package});
+  const PackageListItem({super.key, required this.package});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,6 @@ class PackageListItem extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          // Thumbnail
           ClipRRect(
             borderRadius: BorderRadius.circular(12),
             child: Image.network(
@@ -31,12 +30,10 @@ class PackageListItem extends StatelessWidget {
           ),
           const SizedBox(width: 14),
 
-          // Info
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Name + price badge
                 Row(
                   children: [
                     Expanded(
@@ -68,7 +65,6 @@ class PackageListItem extends StatelessWidget {
                 ),
                 const SizedBox(height: 6),
 
-                // Date
                 Row(
                   children: [
                     const Icon(Icons.calendar_today_outlined, size: 14, color: AppColors.textGray),
@@ -81,7 +77,6 @@ class PackageListItem extends StatelessWidget {
                 ),
                 const SizedBox(height: 6),
 
-                // Rating stars
                 Row(
                   children: [
                     ...List.generate(
@@ -103,10 +98,8 @@ class PackageListItem extends StatelessWidget {
                 ),
                 const SizedBox(height: 6),
 
-                // Avatars + person count
                 Row(
                   children: [
-                    // Stacked avatars
                     SizedBox(
                       width: 48,
                       height: 24,

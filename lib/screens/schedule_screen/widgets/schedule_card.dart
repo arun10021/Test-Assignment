@@ -31,7 +31,6 @@ class ScheduleCard extends StatelessWidget {
       ),
       child: Row(
         children: [
-          // Thumbnail
           ClipRRect(
             borderRadius: const BorderRadius.horizontal(left: Radius.circular(16)),
             child: Image.network(
@@ -52,7 +51,6 @@ class ScheduleCard extends StatelessWidget {
           ),
           const SizedBox(width: 12),
 
-          // Info
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -108,7 +106,6 @@ class ScheduleCard extends StatelessWidget {
             ),
           ),
 
-          // Arrow chevron
           Padding(
             padding: const EdgeInsets.only(right: 12),
             child: const Icon(Icons.chevron_right,

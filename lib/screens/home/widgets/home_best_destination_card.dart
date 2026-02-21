@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:test_assignment/models/destination_model.dart';
-import 'package:test_assignment/providers/app_provider.dart';
+import 'package:test_assignment/screens/schedule_screen/providers/schedule_provider.dart';
 import 'package:test_assignment/screens/details/details_screen.dart';
 import 'package:test_assignment/utils/app_constants.dart';
 
+import '../../../providers/destinatioN_provider.dart';
 import 'home_avatar_stack.dart';
 
 class BestDestinationCard extends StatelessWidget {
@@ -80,7 +81,6 @@ class BestDestinationCard extends StatelessWidget {
 
             const SizedBox(height: 10),
 
-            // Destination name
             Text(
               destination.name,
               style: const TextStyle(
@@ -94,7 +94,6 @@ class BestDestinationCard extends StatelessWidget {
 
             const SizedBox(height: 6),
 
-            // Location | star | avatar stack
             Row(
               children: [
                 const Icon(Icons.location_on_outlined,

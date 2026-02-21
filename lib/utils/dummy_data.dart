@@ -183,35 +183,35 @@ class DummyData {
       id: '1',
       destinationName: 'Hisma Desert',
       locationDetail: 'NEOM, Saudi Arabia',
-      scheduledDate: DateTime(2023, 10, 22), // Thursday — the selected day in design
+      scheduledDate: DateTime(2023, 10, 22),
       imageUrl: 'https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=200',
     ),
     ScheduleModel(
       id: '2',
       destinationName: 'The HSBC Rain Vortex',
       locationDetail: 'Zeero Point, Sylhet',
-      scheduledDate: DateTime(2023, 10, 22), // also Thursday
+      scheduledDate: DateTime(2023, 10, 22),
       imageUrl: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=200',
     ),
     ScheduleModel(
       id: '3',
       destinationName: 'island of Siargao',
       locationDetail: 'Siargao,Philippines',
-      scheduledDate: DateTime(2023, 10, 24), // Saturday
+      scheduledDate: DateTime(2023, 10, 24),
       imageUrl: 'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=200',
     ),
     ScheduleModel(
       id: '4',
       destinationName: 'Khai Island Beach',
       locationDetail: 'Chang Wat Phang-nga, Thailand',
-      scheduledDate: DateTime(2023, 10, 20), // Tuesday
+      scheduledDate: DateTime(2023, 10, 20),
       imageUrl: 'https://images.unsplash.com/photo-1537953773345-d172ccf13cf4?w=200',
     ),
     ScheduleModel(
       id: '5',
       destinationName: 'Niladri Reservoir',
       locationDetail: 'Sylhet, Bangladesh',
-      scheduledDate: DateTime(2023, 10, 19), // Monday
+      scheduledDate: DateTime(2023, 10, 19),
       imageUrl: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=200',
     ),
   ];

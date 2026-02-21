@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:test_assignment/screens/details/widgets/expedanble_read.dart';
-import '../../providers/app_provider.dart';
+import '../schedule_screen/providers/schedule_provider.dart';
+import '../../providers/destinatioN_provider.dart';
 import '../../utils/app_constants.dart';
 
 class DetailsScreen extends StatefulWidget {
@@ -28,7 +29,6 @@ class _DetailsScreenState extends State<DetailsScreen> {
       body: Stack(
         children: [
 
-          // 1. Full screen hero image — bottom layer
           Positioned.fill(
             child: Image.network(
               destination.galleryImages[provider.imageIndex],
@@ -40,7 +40,6 @@ class _DetailsScreenState extends State<DetailsScreen> {
             ),
           ),
 
-          // 2. White curved sheet — middle layer
           Positioned(
             left: 0,
             right: 0,
@@ -48,7 +47,6 @@ class _DetailsScreenState extends State<DetailsScreen> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                // Drag handle pill above the white card
                 Center(
                   child: Container(
                     width: 40,
@@ -240,7 +238,6 @@ class _DetailsScreenState extends State<DetailsScreen> {
 
                       const SizedBox(height: 20),
 
-                      // About Destination
                       const Text(
                         'About Destination',
                         style: TextStyle(
@@ -255,7 +252,6 @@ class _DetailsScreenState extends State<DetailsScreen> {
 
                       const SizedBox(height: 20),
 
-                      // Book Now button
                       Padding(
                         padding: EdgeInsets.only(
                           bottom: MediaQuery.of(context).padding.bottom + 16,

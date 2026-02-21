@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:test_assignment/screens/popularPackage/widgets/package_list_item.dart';
-import '../../providers/app_provider.dart';
+import '../../providers/destinatioN_provider.dart';
 import '../../utils/app_constants.dart';
-import '../../models/destination_model.dart';
 
 class PopularPackageScreen extends StatelessWidget {
   const PopularPackageScreen({super.key});
@@ -18,7 +17,6 @@ class PopularPackageScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Top bar
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
               child: Row(
@@ -52,7 +50,6 @@ class PopularPackageScreen extends StatelessWidget {
               ),
             ),
 
-            // Section title
             const Padding(
               padding: EdgeInsets.fromLTRB(20, 4, 20, 16),
               child: Text(
@@ -65,7 +62,6 @@ class PopularPackageScreen extends StatelessWidget {
               ),
             ),
 
-            // Package list
             Expanded(
               child: ListView.separated(
                 padding: const EdgeInsets.symmetric(horizontal: 20),

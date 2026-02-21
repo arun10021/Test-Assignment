@@ -5,6 +5,8 @@ import '../../../utils/app_constants.dart';
 import '../provider/navigation_provider.dart';
 
 class BottomNav extends StatelessWidget {
+  const BottomNav({super.key});
+
   @override
   Widget build(BuildContext context) {
     final navProvider = context.watch<NavigationProvider>();

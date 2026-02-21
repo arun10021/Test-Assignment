@@ -4,7 +4,8 @@ import 'package:test_assignment/screens/home/provider/navigation_provider.dart';
 import 'package:test_assignment/screens/home/widgets/home_best_destination_card.dart';
 import 'package:test_assignment/screens/home/widgets/home_bottom_nav_bar.dart';
 import 'package:test_assignment/screens/home/widgets/home_package_card.dart';
-import '../../providers/app_provider.dart';
+import '../schedule_screen/providers/schedule_provider.dart';
+import '../../providers/destinatioN_provider.dart';
 import '../../utils/app_constants.dart';
 import '../popular_places/popular_places_screen.dart';
 import '../popularPackage/popular_package_screen.dart';
@@ -41,10 +42,6 @@ class _HomeBody extends StatelessWidget {
     );
   }
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Home content
-// ─────────────────────────────────────────────────────────────────────────────
 
 class _HomeContent extends StatelessWidget {
   const _HomeContent();

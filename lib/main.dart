@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import 'package:test_assignment/providers/destinatioN_provider.dart';
 import 'package:test_assignment/screens/home/provider/navigation_provider.dart';
-import 'providers/app_provider.dart';
+import 'screens/schedule_screen/providers/schedule_provider.dart';
 import 'screens/home/home_screen.dart';
 
 void main() {

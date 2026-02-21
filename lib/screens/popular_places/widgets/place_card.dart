@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:test_assignment/models/destination_model.dart';
-import 'package:test_assignment/providers/app_provider.dart';
+import 'package:test_assignment/screens/schedule_screen/providers/schedule_provider.dart';
 import 'package:test_assignment/screens/details/details_screen.dart';
 import 'package:test_assignment/utils/app_constants.dart';
+
+import '../../../providers/destinatioN_provider.dart';
 
 class PlaceCard extends StatelessWidget {
   final DestinationModel destination;
@@ -21,7 +23,6 @@ class PlaceCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Image with favorite
           Expanded(
             child: Stack(
               children: [
