@@ -1,0 +1,49 @@
+name: test_assignment
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.5+1
+  cached_network_image: ^3.4.1
+  flutter_rating_bar: ^4.0.1
+  flutter_native_splash: ^2.4.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.3
+
+# Native splash config
+flutter_native_splash:
+  color: "#FF6421"
+  color_dark: "#FF6421"
+  android: true
+  ios: true
+  web: false
+  fullscreen: false
+  android_12:
+    color: "#FF6421"
+    color_dark: "#FF6421"
+
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/img.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#FF6421"
+  adaptive_icon_foreground: "assets/images/img.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
